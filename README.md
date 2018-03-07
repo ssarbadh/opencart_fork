@@ -11,7 +11,7 @@ Read the instructions for setting up the end machine for deployment.
  0. Create a instance profile ( or role ) to use in ec2 instance for code-deploy
 
      Role name: CodeDeploySampleStack-829sf-InstanceRole-1SRRS68NCTZ0D
-	 
+	``` 
 	 Policy Document (JSON):
 	 {
 		"Statement": [
@@ -28,7 +28,7 @@ Read the instructions for setting up the end machine for deployment.
 			}
 		]
 	}
-	 
+	``` 
 This will ensure seamless intergration with the shared AMI (if used )
 	 
  1. Create a LAMP Stack machine on linux out of Community AMI [Bitnami](https://docs.bitnami.com/aws/infrastructure/lamp/)
