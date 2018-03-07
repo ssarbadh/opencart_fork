@@ -35,18 +35,20 @@ This will ensure seamless intergration with the shared AMI (if used )
  2. Put the following into user-data to have the necessary 
     a. Code-deploy agent 
 	b. AWS cli be installed 
-	
+
+	```	
 	#!/bin/bash
 	apt-get -y update
 	apt-get -y install ruby
     apt-get -y install wget
 	apt-get -y install awscli
 	cd /home/ubuntu
-*	wget https://bucket-name.s3.amazonaws.com/latest/install
+	wget https://bucket-name.s3.amazonaws.com/latest/install
 	chmod +x ./install
 	./install auto
+	```
+* Find the correct [bucket-name](https://docs.aws.amazon.com/codedeploy/latest/userguide/resource-kit.html#resource-kit-bucket-names) and subsitute here *	
 
-* Find the correct [bucket-name](https://docs.aws.amazon.com/codedeploy/latest/userguide/resource-kit.html#resource-kit-bucket-names) and subsitute here 	
  4. After machine loads up, login to the machine and check if code-deploy agent is running.
 	
 	sudo service codedeploy-agent status
