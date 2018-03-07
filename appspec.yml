@@ -4,11 +4,11 @@ files:
   - source: upload/
     destination: /opt/bitnami/apache2/htdocs
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
-    - location: scripts/start_server
+  AfterInstall:
+#    - location: scripts/install_dependencies
+#      timeout: 300
+#      runas: root
+    - location: scripts/configure_server
       timeout: 300
       runas: root
   ApplicationStop:
