@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /opt/bitnami/apache2
+if [ -d htdocs_back ];  then  rm -Rf htdocs_back; fi
+if [ -d htdocs ];  then  mv htdocs htdocs_back; fi
