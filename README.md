@@ -58,11 +58,11 @@ This will ensure seamless intergration with the shared AMI (if used )
     less /var/log/aws/codedeploy-agent/codedeploy-agent.log
 	
  6. If successfully connected, it will show 
- 
-     2018-03-07 12:10:00 INFO  [codedeploy-agent(1025)]: Version file found in /opt/codedeploy-agent/.version with agent version OFFICIAL_1.0-1.1352_deb.
+``` 
+2018-03-07 12:10:00 INFO  [codedeploy-agent(1025)]: Version file found in /opt/codedeploy-agent/.version with agent version OFFICIAL_1.0-1.1352_deb.
 2018-03-07 12:11:01 INFO  [codedeploy-agent(1025)]: [Aws::CodeDeployCommand::Client 200 61.026193 0 retries] poll_host_command(host_identifier:"arn:a
 ws:ec2:ap-south-1:122213125690:instance/i-0083c7f372c858189")
-
+```
 Or,
 Use this shared AMI to create a machine that is pre-configured with requisites. (will share it soon)
 Still have to create a role for instance. 
